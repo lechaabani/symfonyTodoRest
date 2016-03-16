@@ -1,0 +1,12 @@
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+notes:
+  prefix: v1
+  type:     rest
+  resource: AppBundle\Controller\NoteController
